@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install -y \
 
 RUN git clone https://github.com/searxng/searxng /app && \
     pip install --upgrade pip && \
+    pip install pyyaml && \
     pip install -e .[all]
 
 COPY settings.yml /app/searxng-docker/searxng/settings.yml

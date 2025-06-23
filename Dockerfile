@@ -10,7 +10,7 @@ RUN git clone https://github.com/searxng/searxng /app && \
     pip install --upgrade pip && \
     pip install -e .[all]
 
-COPY settings.yml /app/searxng/settings.yml
+COPY settings.yml /app/searxng-docker/searxng/settings.yml
 
 EXPOSE 8080
 CMD ["python3", "searx/webapp.py"]

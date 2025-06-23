@@ -7,5 +7,3 @@ server:
   image_proxy: true
 ui:
   static_use_hash: true
-redis:
-  url: ${REDIS_URL} # redis://redis:6379/0

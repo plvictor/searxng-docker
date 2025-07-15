@@ -1,9 +1,16 @@
 # see https://docs.searxng.org/admin/settings/settings.html#settings-use-default-settings
 use_default_settings: true
+
 server:
   base_url: '/'
-  secret_key: "178ccd29e50dd92932af59adfaf6447bc57e25ff2217e3b8fdbd2f546426b7ad"  # change this!
-  limiter: false  # enable this when running the instance for a public usage on the internet
+  secret_key: "178ccd29e50dd92932af59adfaf6447bc57e25ff2217e3b8fdbd2f546426b7ad"
+  limiter: false
   image_proxy: true
+
 ui:
   static_use_hash: true
+
+search:
+  format:
+    - html
+    - json

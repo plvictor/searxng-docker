@@ -11,6 +11,6 @@ ui:
   static_use_hash: true
 
 search:
-  format:
+  formats:
     - html
     - json
